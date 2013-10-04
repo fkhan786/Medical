@@ -1,0 +1,29 @@
+<div id="medicine_list" >
+  <h1>Listing Medicines</h1>
+  <table>
+    <% @medicines.each do |medicine| %>
+        <tr class=" <%= cycle('list_line_odd' , 'list_line_even' ) %>" >
+          <td>
+            <%= image_tag(medicine.image_display, :class => 'list_image' ) %>
+          </td>
+          <td class="list_description" >
+            <dl>
+              <dt><%= medicine.title %></dt>
+              <dd><%= truncate(strip_tags(medicine.description),
+                               :length => 80) %></dd>
+            </dl>
+          </td>
+          <td class="list_actions" >
+            <%= link_to 'Show' , medicine %><br/>
+            <%= link_to 'Edit' , edit_medicine_path(medicine) %><br/>
+            <%= link_to 'Destroy' , medicine,
+                        :confirm => 'Are you sure?' ,
+                        :method => :delete %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>
+<br />
+<%= link_to 'New Medicine' , new_medicine_path %>
+

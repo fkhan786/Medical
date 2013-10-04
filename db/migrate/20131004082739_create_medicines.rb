@@ -3,7 +3,7 @@ class CreateMedicines < ActiveRecord::Migration
     create_table :medicines do |t|
       t.string :title
       t.text :description
-      t.string :image_display
+      t.string :image_url
       t.decimal :price, :precision=>8, :scale=>2
 
       t.timestamps

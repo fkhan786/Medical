@@ -8,17 +8,17 @@
 Medicine.delete_all
 Medicine.create(:title => 'colpol',
                 :description => 'for fever',
-                :image_display => 'image11.jpg',
+                :image_url => 'image11.jpg',
                 :price => '56.44')
 Medicine.create(:title => 'crocin',
                 :description => 'for fever',
-                :image_display => 'images.jpeg',
+                :image_url => 'images.jpg',
                 :price => '22.44')
 Medicine.create(:title => 'fexy',
                 :description => 'for allergy ',
-                :image_display => 'index.jpeg',
+                :image_url => 'index.jpg',
                 :price => '11.33')
 Medicine.create(:title => 'protera',
                 :description => 'for dehydration',
-                :image_display => 'medicine_pills.jpg',
+                :image_url => 'medicine_pills.jpg',
                 :price => '67.44')

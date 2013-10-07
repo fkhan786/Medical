@@ -29,6 +29,18 @@ a {
   }
 }
 
+#side a{
+  color: #C45AEC;
+  font-size:medium;
+  &:visited {
+    color: #893BFF;
+  }
+  &:hover {
+    color: #000;
+    background-color: #C38EC7;
+  }
+}
+
 div {
   &.field, &.actions {
     margin-bottom: 10px;

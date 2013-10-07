@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Medical</title>
+  <title>Online Medical Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "medicine", media: "all" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store" >
+<div id="banner" >
+  <%= image_tag("logo.png") %>
+  <%= @page_title || "Medical Store" %>
+</div>
+<div id="columns" >
+  <div id="side" >
+    <a href="http://www...." >Home</a><br />
+    <a href="http://www..../faq" >Questions</a><br />
+    <a href="http://www..../news" >News</a><br />
+    <a href="http://www..../contact" >Contact</a><br />
+  </div>
+  <div id="main" >
+    <%= yield %>
+  </div>
+</div>
 </body>
+</html>
+
 </html>

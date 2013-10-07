@@ -13,7 +13,7 @@
 #store h1 {
     font:  150% sans-serif;
     color: #226;
-    border-bottom: 3px dotted #77d;
+    border-bottom: 3px dotted #C45AEC;
 }
 
 /* Styles for medicines/index */
@@ -110,3 +110,46 @@
     font-weight: bold;
     margin-right: 2em;
 }
+
+/* Styles for main page */
+
+#banner {
+    background: #FFFFF8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 60px/60px "Times New Roman" , serif;
+    color: #C45AEC;
+    text-align: center;
+    height: 60px;
+}
+
+#banner img {
+    float: left;
+    height: 60px;
+    width: 200px;
+}
+
+#columns {
+    background: #EBE1DA;
+}
+
+#main {
+    margin-left: 17em;
+    padding-top: 4ex;
+    padding-left: 2em;
+    background: white;
+}
+
+#side {
+    float: left;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 16em;
+}
+#side a {
+    color: #C45AEC;
+    font-size:medium;
+}
+
